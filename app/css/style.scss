@@ -1,0 +1,175 @@
+:root {
+--Bright-orange: hsl(31, 77%, 52%);
+--Dark-cyan: hsl(184, 100%, 22%);
+--Very-dark-cyan: hsl(179, 100%, 13%);
+--Transparent-white: hsla(0, 0%, 100%, 0.75);
+--Very-light-gray: hsl(0, 0%, 95%);
+}
+
+* {
+  font-size: 100%;
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+
+}
+
+body {
+  font-family: "Lexend Deca", sans-serif;
+  box-sizing: border-box;
+  line-height: 1.3;
+  background-color: var(--Very-light-gray);
+}
+
+.container {
+  padding: 60px 20px;
+  border-radius: 10px;
+  background-color: var(--Very-light-gray);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+ 
+}
+
+
+.card {
+  height: fit-content;
+  padding: 40px 40px 40px 40px;
+  max-width: 310px;
+  align-self: center;
+  
+}
+
+.one {
+  background-color: var(--Bright-orange);
+  border-radius: 10px 10px 0 0;
+}
+
+.two {
+  background-color: var(--Dark-cyan);
+}
+
+.three {
+  background-color: var(--Very-dark-cyan);
+  border-radius: 0 0 10px 10px;
+}
+
+.title {
+  font-family: "Big Shoulders Display", sans-serif;
+  color: var(--Very-light-gray);
+  font-size: 36px;
+  text-transform: uppercase;
+  padding-bottom: 28px;
+  font-weight: 700;
+}
+
+.main-text {
+  color: var(--Transparent-white);
+  font-size: 15px;
+  max-width: 400px;
+  line-height: 1.8;
+  padding-bottom: 30px;
+}
+
+.icon {
+  padding-bottom: 30px;
+}
+
+.btn {
+  width: 148px;
+  height: 48px;
+  background-color: var(--Very-light-gray);
+  border: var(--Very-light-gray);
+  border-radius: 40px;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+  border-style: solid;
+  cursor: pointer;
+  text-align: center;
+}
+
+.btn-1 {
+  color: var(--Bright-orange);
+}
+
+.btn-2 {
+  color: var(--Dark-cyan);
+}
+
+.btn-3 {
+  color: var(--Very-dark-cyan);
+}
+
+.btn:active {
+  background-color: transparent;
+
+}
+
+.btn:hover {
+  background-color: transparent;
+  color: var(--Very-light-gray);
+}
+
+
+
+
+
+@media (min-width: 748px) {
+  .container {
+    flex-direction: row;
+    border-radius: 10px;
+    
+  
+  
+  }
+  
+  .one {
+    border-radius: 10px 0px 0px 10px;
+    height: 100%;
+  }
+
+  .two {
+    height: 100%;
+  }
+
+  .three {
+    border-radius: 0px 10px 10px 0;
+    height: 100%;
+  }
+
+  .card {
+    padding: 50px 50px 50px 50px;
+    height: 500px;
+    max-width: 250px;
+  }
+
+
+}
+
+@media (min-width: 980px) {
+  .container {
+    height: 100vh;
+  }
+
+  .card {
+    max-width: 310px;
+  }
+
+  .main-text {
+    padding-bottom: 60px;
+  }
+}
+
+
+.attribution { 
+  font-size: 11px; 
+  text-align: center; 
+  padding-bottom: 50px;
+  color: black;
+}
+
+.attribution a { 
+  color: hsl(228, 45%, 44%);
+  text-decoration: none; 
+}
